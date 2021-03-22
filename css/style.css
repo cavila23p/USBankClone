@@ -1,0 +1,517 @@
+:root {
+  --background-color: #0069D9;
+  --primary-color:#0069D9;
+  --secondary-color: #000090;
+
+  --text-light-color: #fff;
+  --text-dark-color: #333
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  grid-template-columns: 1fr;
+}
+
+ul {
+  list-style: none;
+}
+
+li, a {  
+  font-size: 18px;
+}
+
+li, a:hover{
+  transition: all .25s;  
+}
+
+.btn-secondary {	
+  padding: 20px;
+  margin: 10px 3px;
+  background-color: #6C757D;
+  border: none;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.btn-secondary:hover {
+  background-color: #555a5e;
+}
+
+/**************
+ * NAVIGATION *
+ **************/
+.navigation img {
+  width: 100px;
+}
+
+/************
+ * SHOWCASE *
+ ************/
+.showcase {
+  background-image: url("../images/bg.jpg");
+  max-width: 100%;
+  max-height: 100vh;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 50px;   
+  color: var(--text-light-color);
+}
+
+.showcase .flex {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.showcase .r1-col-2 {
+  margin: 20px;
+}
+
+.showcase .row-1 {
+  margin: 30px;
+}
+
+.showcase .form {
+  width: 500px;
+  padding: 30px 40px;
+  border-radius: 5px;
+}
+
+.showcase .login-bottom a {
+  font-size: 14px;
+}
+
+.showcase .sc-row-2 p{
+  align-items: flex-start;
+  flex-wrap: wrap;  
+}
+
+.showcase .sc-row-2 i {
+  font-size: 100px;  
+}
+
+.showcase .sc-row-2 a {
+  color: var(--text-light-color);
+}
+
+.showcase .sc-row-2 a:hover {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+/***************
+ * CREDIT CARD *
+ ***************/
+ .credit-card {
+   margin: 50px 0;
+ }
+
+.credit-card .flex {
+  flex-wrap: wrap;
+}
+
+.credit-card .cc-r2 {
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+.credit-card .cc-r2-col-1 {
+  margin-top: 50px;
+}
+
+.credit-card .cc-r2-col-1 h1{
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.credit-card .cc-r2-col-1 p{
+  font-size: 30px;  
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.credit-card img {  
+  width: 300px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+/*******
+ * APP *
+ *******/
+.app {
+  background-color: #E0E0D1;  
+}
+
+.app .flex {
+  padding: 50px;  
+  
+}
+
+.app img {
+  border-radius: 5px;
+  padding-right: 30px;
+  align-self: start; 
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.app .app-col-2 {
+  align-self: start;
+  width: 40%;
+}
+
+.app .app-col-2 h1{
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.app .app-col-2 p{
+  font-size: 25px;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+/*********
+ * RATES *
+ ********/
+.rates {
+  margin: 50px;
+  text-align: center;
+}
+
+.rates .flex {
+  flex-direction: column;
+}
+
+.rates h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.rates h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.rates .rates-1 a, 
+.rates .rates-2 a {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;  
+}
+
+.rates .rates-1 a:hover, 
+.rates .rates-2 a:hover {
+  color: var(--primary-color);
+}
+
+.rates .rates-1 li {
+  display: inline-block;
+  margin: 20px;  
+}
+
+.rates .rates-2 li {
+  display: inline-block;  
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  border-right: solid 0.3px;
+  margin-top: 40px;
+}
+
+
+/***********
+ * STORIES *
+ ***********/
+.stories {
+  background-color: #E0E0D1; 
+  padding: 50px 100px;
+  text-align: center;
+}
+
+.stories .flex {
+  flex-wrap: wrap;
+}
+
+.stories h1 {
+  margin-bottom: 50px;
+  color: var(--secondary-color);
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.stories h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.stories p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.stories img {
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.stories .row2 {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stories .r2-col-1 {   
+  display: inline-block;   
+}
+
+.stories .r2-col-2 {   
+  display: inline-block;   
+}
+
+/**********
+ * FOOTER *
+ **********/
+.footer {
+  margin: 50px;
+  text-align: center;
+}
+
+.footer .ul-1 li{
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.footer .ul-1 li a {
+  text-decoration: none;
+  border-right: solid 0.5px; 
+  padding: 0 20px;
+  color: var(--text-dark-color);   
+}
+
+.footer .ul-1 li a:hover {
+  color: var(--secondary-color);
+}
+
+.footer .ul-2 li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.footer .ul-2 li a {
+  text-decoration: none; 
+}
+
+.footer .ul-2 i {
+  font-size: 50px; 
+  color: var(--text-dark-color);
+}
+
+.footer .ul-2 li a i:hover {
+  color: var(--secondary-color);
+}
+
+/*****************
+ * MEDIA QUERIES *
+ *****************/
+ @media only screen and (max-width: 1800px){  
+  .stories .r2-col-1 .p-text,
+  .stories .r2-col-2 .p-text {
+    width: 500px;    
+  }
+}
+
+@media only screen and (max-width: 1400px){  
+  .stories .r2-col-1 .p-text,
+  .stories .r2-col-2 .p-text {
+    width: 400px;    
+  }
+}
+
+@media only screen and (max-width: 1200px){  
+  .app img {
+    width: 550px;
+  }
+  
+  .app .btn-secondary {
+    font-size: 20px;
+    padding: 10px 20px;
+  } 
+}
+
+@media only screen and (max-width: 1100px){  
+  .showcase .flex{
+    justify-content: center;
+  }
+
+  .showcase .r1-col-1 {
+    width: 500px;
+  }
+
+  .showcase .form {
+    width: 400px;    
+  }
+
+  .showcase .sc-row-2 i {
+    font-size: 80px;
+  } 
+
+  .app .flex {
+    flex-wrap: wrap;
+    justify-content: center;    
+  }
+
+  .app .app-col-2 {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .app .app-col-2 h1{
+    font-size: 35px;
+  }
+  
+  .app .app-col-2 p{
+    font-size: 20px;    
+  }
+
+  .app .btn-secondary {
+    font-size: 20px;
+  }
+
+  .stories .flex {
+    justify-content: center;
+  }
+
+  .stories h1 {
+    font-size: 50px;
+  }
+
+  .stories h3 {
+    font-size: 25px;
+  }
+
+  .stories p {
+    font-size: 18px;
+  }
+
+  .stories .r2-col-1 .p-text,
+  .stories .r2-col-2 .p-text {
+    width: 300px;    
+  }
+ 
+}
+
+@media only screen and (max-width: 760px){  
+  .showcase .sc-row-2 i {
+    font-size: 50px;
+  } 
+
+  .credit-card .btn-secondary {
+    width: 80%;  
+    font-size: 20px;
+    padding: 10px;  
+  }
+
+  .credit-card .cc-r2-col-1 h1{
+    font-size: 40px;    
+  }
+
+  .credit-card .cc-r2-col-1 p{
+    font-size: 25px;    
+  }
+
+  .credit-card .cc-r2-col-1 h3{
+    font-size: 25px;    
+  }
+
+  .credit-card .cc-r2 {
+    justify-content: space-between;
+    margin: 0 50px;
+  }
+
+  .credit-card .cc-r2-col-2 {
+    margin: 0 auto;
+  }
+
+  .app img {
+    max-width: 400px;
+  }
+
+  .app .app-col-2 h1{
+    font-size: 30px;
+  }
+
+  .rates h1 {
+    font-size: 45px;
+  }
+
+  .rates h3 {
+    font-size: 25px;
+  }
+
+  .rates .rates-1 li {
+    display: block;
+  }
+
+  .rates .rates-2 li{
+    display: block;
+    border-right: solid 0px;
+  }
+
+  .footer .ul-1 li {
+    display: block;
+    width: 100%;    
+  }
+
+  .footer .ul-1 li a {
+    border-right: solid 0px;     
+  }
+
+  .footer .ul-1 li a:hover {
+    text-decoration: underline;   
+  }
+}
+
+@media only screen and (max-width: 560px){ 
+  .app .btn-secondary {
+    font-size: 20px;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  .footer .ul-2 li {
+    display: block;
+    width: 100%;
+  }
+}
