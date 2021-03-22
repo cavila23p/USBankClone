@@ -504,6 +504,10 @@ li, a:hover{
 }
 
 @media only screen and (max-width: 560px){ 
+  .showcase .icons {
+    display: none;
+  }
+
   .app .btn-secondary {
     font-size: 20px;
     padding: 10px;
