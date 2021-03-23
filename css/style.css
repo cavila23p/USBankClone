@@ -508,6 +508,10 @@ li, a:hover{
   .showcase .icons {
     display: none;
   }
+
+  .credit-card {
+    margin: 130px 0;
+  }
   
   .app .btn-secondary {
     font-size: 20px;
